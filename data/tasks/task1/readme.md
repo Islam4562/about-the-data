@@ -2,16 +2,20 @@ Task Description: Dividing Data into Categories for Easy Use
 Objective:
 The goal of this task is to take a dataset containing random data and divide it into "shelves" (categories) to make it more convenient for further analysis or research purposes. These shelves can be based on characteristics such as age, product category, and other parameters that can be extracted from the data.
 Task Steps:
-Loading the Data: The input consists of a file with random data containing various attributes such as age, income, product category, and purchase date. The first step is to load this file into the program using the pandas library.
-Dividing Data by Age Groups: One of the requirements is to divide the data by age groups. To achieve this, we create age intervals, for example:
+Loading the Data:
+The input consists of a file with random data containing various attributes such as age, income, product category, and purchase date. The first step is to load this file into the program using the pandas library.
+Dividing Data by Age Groups:
+One of the requirements is to divide the data by age groups. To achieve this, we create age intervals, for example:
 0-18 years
 19-35 years
 36-50 years
 51+ years
 We use the pd.cut() function to categorize the values in the "age" column into these groups. Each value in the "age" column will be assigned the appropriate age group.
-Grouping Data by Product Categories: The next step is to divide the data based on product categories. The dataset might have a column called "category" that contains values such as "Electronics", "Clothing", "Furniture", "Groceries", etc.
+Grouping Data by Product Categories:
+The next step is to divide the data based on product categories. The dataset might have a column called "category" that contains values such as "Electronics", "Clothing", "Furniture", "Groceries", etc.
 We use the groupby() function to group the data by this column. Each group represents a product category.
-Saving Data into Separate Files: Once the data is divided by age groups and product categories, each of these groups will be saved into a separate CSV file. These files are named to reflect their content, for example:
+Saving Data into Separate Files:
+Once the data is divided by age groups and product categories, each of these groups will be saved into a separate CSV file. These files are named to reflect their content, for example:
 Electronics_data.csv — for data related to products in the "Electronics" category.
 age_group_0-18.csv — for data on users in the 0-18 age group.
 These files are saved to disk, making it easier to work with separate groups of data in the future.
