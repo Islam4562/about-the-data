@@ -1,0 +1,18 @@
+SQL queries separately
+
+a) The amount is made by catalogues:
+SELECT the category, AMOUNT(price * quantity) AS a total_ revenue
+FROM sales
+GROUP BY category;
+
+b) The product with the largest unloading:
+SELECT the product, THE AMOUNT(price * quantity) AS A merchandise_home
+FROM sales
+GROUP BY product
+THE ORDER FOR THE PRODUCT IS SPENT BELOW
+RESTRICTION 1;
+
+c) The number of orders per day:
+SELECT order_date, COUNT(order_id) AS orders_per_day
+FROM sales
+GROUP BY order date;
